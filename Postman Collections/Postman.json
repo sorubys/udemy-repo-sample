@@ -1,0 +1,93 @@
+{
+	"info": {
+		"_postman_id": "c212e4d5-1e44-4a7d-b511-1efdf9354079",
+		"name": "spring_demo",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "NewRegisterStudent",
+			"id": "81df7c6b-a80b-478f-bd9b-053158115430",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"Kana\",\r\n    \"email\":\"kana18@gmail.com\",\r\n    \"dob\":\"2000-07-20\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/api/v1/student"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/v1/student/1",
+			"id": "569d534b-373d-4159-b168-b5356bd8ec1e",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": "http://localhost:8080/api/v1/student/1"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/v1/student/1?name=shiva&email=shiva@gmail.com",
+			"id": "e776298b-17ed-4b00-86c5-4bc7c95e706a",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/v1/student/1?name=shiva&email=shiva@gmail.com",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"student",
+						"1"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "shiva"
+						},
+						{
+							"key": "email",
+							"value": "shiva@gmail.com"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/v1/student",
+			"id": "9891a021-cc03-4c14-b16d-39953ea3fbfe",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8080/api/v1/student"
+			},
+			"response": []
+		}
+	]
+}
